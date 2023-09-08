@@ -5,7 +5,7 @@ RUN apk update
 RUN apk upgrade
 # add/install python3 and related libraries
 # https://pkgs.alpinelinux.org/package/edge/main/x86/python3
-RUN apk add nodejs nodejs-npm
+RUN apk add nodejs npm
 # make a directory for our application
 WORKDIR /src
 # move requirements file into the container
